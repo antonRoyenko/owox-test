@@ -1,0 +1,46 @@
+<div class="button-price"><div class="price-wrap"><span class="price">9699 </span><span class="currency">грн</span></div></div>
+
+body {
+    display: block;
+    background:white;
+}
+.button-price {
+    background:#ffffff;
+    border: 1px solid #e4e4e4;
+    transform: skew(-20deg);
+    -webkit-transform: skew(-20deg);
+    -moz-transform: skew(-20deg);
+    display: inline-block;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 2px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 2px;
+    background: rgba(255,255,255,1);
+background: -webkit-linear-gradient(rgba(255,255,255,1) 0%, rgba(237,238,238,1) 70%, rgba(255,255,255,1) 100%);
+background: -moz-linear-gradient(rgba(255,255,255,1) 0%, rgba(237,238,238,1) 70%, rgba(255,255,255,1) 100%);
+background: -o-linear-gradient(rgba(255,255,255,1) 0%, rgba(237,238,238,1) 70%, rgba(255,255,255,1) 100%);
+background: linear-gradient(rgba(255,255,255,1) 0%, rgba(237,238,238,1) 70%, rgba(255,255,255,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#ffffff', GradientType=0 );
+
+}
+.button-price > .price-wrap {
+    transform: skew(20deg);
+    -webkit-transform: skew(20deg);
+    -moz-transform: skew(20deg);
+    padding:5px 45px 5px 15px;
+    margin: 0;
+    display: block;
+}
+.button-price > .price-wrap .price {
+  font-weight: bold;
+  font-size: 18px;
+}
+.button-price > .price-wrap .currency {
+  font-size: 13px;
+}
+sass {
+background-color: rgba(255,255,255,1);
+background: @include filter-gradient(#ffffff, #ffffff, vertical);
+background: @include background-image(linear-gradient(top, rgba(255,255,255,1) 0%, rgba(237,238,238,1) 70%, rgba(255,255,255,1) 100%));
+
+}

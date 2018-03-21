@@ -1,0 +1,103 @@
+.shares {
+  #shares-carousel {
+    height: 258px;
+    border: 7px solid #689cbe;
+    border-radius: 7px;
+    .carousel-indicators {
+      position: absolute;
+      left: 0;
+      right: auto;
+      bottom: -26px;
+      z-index: 15;
+      padding-left: 0;
+      margin: 0;
+      list-style: none;
+      div {
+        width: 20px;
+        height: 26px;
+        margin-right: 2px;
+        text-align: center;
+        background-color: #689cbe;
+        border: 2px solid #689cbe;
+        color: #fff;
+        border-bottom-left-radius: 7px;
+        border-bottom-right-radius: 7px;
+      }
+      .active {
+        background-color: #fff;
+        color: #d10000;
+        border-top: 2px solid #fff;
+      }
+    }
+    .carousel-caption {
+      height: 100%;
+      width: 65%;
+      bottom: 0;
+      left: 0;
+      right: auto;
+      padding: 5px 35px;
+      text-align: left;
+      h5 {
+        font-size: 30.61px;
+        color: #6640c7;
+        @include baner-font;
+        font-style: normal;
+      }
+      p {
+        font-size: 17px;
+        color: #333;
+        @include baner-font;
+        max-width: 80%;
+        margin-bottom: 10px;
+      }
+      .btn-primary {
+        @include baner-header-font;
+        padding: 10px 25px;
+        border-radius: 7px;
+        font-size: 18px;
+        letter-spacing: 0;
+        text-transform: initial;
+        border: 1px solid #585858;
+        background: rgba(31,193,208,1);
+background: -moz-linear-gradient(-45deg, rgba(31,193,208,1) 0%, rgba(165,16,206,1) 38%, rgba(165,16,206,1) 49%, rgba(122,13,152,1) 68%, rgba(122,13,152,1) 100%);
+background: -webkit-gradient(left top, right bottom, color-stop(0%, rgba(31,193,208,1)), color-stop(38%, rgba(165,16,206,1)), color-stop(49%, rgba(165,16,206,1)), color-stop(68%, rgba(122,13,152,1)), color-stop(100%, rgba(122,13,152,1)));
+background: -webkit-linear-gradient(-45deg, rgba(31,193,208,1) 0%, rgba(165,16,206,1) 38%, rgba(165,16,206,1) 49%, rgba(122,13,152,1) 68%, rgba(122,13,152,1) 100%);
+background: -o-linear-gradient(-45deg, rgba(31,193,208,1) 0%, rgba(165,16,206,1) 38%, rgba(165,16,206,1) 49%, rgba(122,13,152,1) 68%, rgba(122,13,152,1) 100%);
+background: -ms-linear-gradient(-45deg, rgba(31,193,208,1) 0%, rgba(165,16,206,1) 38%, rgba(165,16,206,1) 49%, rgba(122,13,152,1) 68%, rgba(122,13,152,1) 100%);
+background: linear-gradient(175deg, rgba(31,193,208,1) 0%, rgba(165,16,206,1) 38%, rgba(165,16,206,1) 49%, rgba(122,13,152,1) 68%, rgba(122,13,152,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1fc1d0', endColorstr='#7a0d98', GradientType=1 );
+      }
+    }
+  }
+  .shares-items {
+    padding-left: 30px;
+    h3 {
+      margin: 0;
+      font-size: 25px;
+      color: #d10000;
+    }
+    ul {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      li {
+        display: flex;
+        margin-top: 15px;
+        .image {
+          min-width: 75px;
+          height: 55px;
+          line-height:55px;
+          padding-left: 10px;
+          padding-right: 10px;
+          width: 80px;
+        }
+        .text {
+          line-height: 18px;
+          span {
+            font-size: 13px;
+          }
+        }
+      }
+    }
+  }
+}

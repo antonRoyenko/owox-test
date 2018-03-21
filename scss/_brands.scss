@@ -1,0 +1,157 @@
+.brands {
+  margin-bottom: 35px;
+  &>div>p{
+    font-size: 15px;
+    font-style: italic;
+  }
+  ul {
+    position: relative;
+    -js-display: flex;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: justify;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    li {
+      div {
+        width: 105px;
+        height: 40px;
+      }
+      .brand-image1 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -10px 2px;
+
+      }
+      .brand-image2 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -128px 2px;
+      }
+      .brand-image3 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -239px -2px;
+      }
+      .brand-image4 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -343px 2px;
+      }
+      .brand-image5 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -462px 0px;
+      }
+      .brand-image6 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -586px 2px;
+      }
+      .brand-image7 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -725px 5px;
+      }
+      .brand-image8 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -864px 0px;
+      }
+      .brand-image9 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -9px 56px;
+      }
+      .brand-image10 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -128px 56px;
+      }
+      .brand-image11 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -239px 58px;
+      }
+      .brand-image12 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -342px 60px;
+      }
+      .brand-image13 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -467px 62px;
+      }
+      .brand-image14 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -586px 62px;
+      }
+      .brand-image15 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -729px 62px;
+      }
+      .brand-image16 {
+        background-image: url(../img/sprite-brand.png);
+        background-position: -865px 60px;
+      }
+    }
+    .border-brand-top {
+      position: relative;
+      background: #dddcdc;
+      width: 1px;
+      height: 65px;
+      &:after {
+        content: "";
+        width: 2rem;
+        right: -1rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        -webkit-box-shadow: inset 0 18px 18px 0 #fff;
+        box-shadow: inset 0 18px 18px 0 #fff;
+      }
+    }
+    .border-bottom {
+      position: absolute;
+      width: 100%;
+      bottom: 0;
+    }
+    .border-brand-bottom {
+      position: relative;
+      background: #dddcdc;
+      width: 1px;
+      height: 65px;
+      &:after {
+        content: "";
+        width: 2rem;
+        right: -1rem;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        -webkit-box-shadow: inset 0 -18px 18px 0 #fff;
+        box-shadow: inset 0 -18px 18px 0 #fff;
+      }
+    }
+  }
+}
+.brands-title {
+  margin-bottom: 30px;
+  ul {
+    padding: 0;
+    margin-bottom: 20px;
+    columns: 8;
+    -moz-columns: 8;
+    column-gap: 20px;
+    break-before: always;
+    display: block;
+    li {
+      a {
+        font-size: 11px;
+        &:hover {
+          color: #d10000;
+          border-bottom: 1px solid #d10000;
+          color: #d10000;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,116 @@
+// Styling for the footer
+footer {
+    padding: 20px 0 55px;
+    color: #333;
+    background-color: #fff;
+    p {
+        font-size: 15px;
+        margin: 0;
+    }
+    .pages {
+        padding-top: 10px;
+        padding-bottom: 30px;
+    }
+    .contact {
+      .adress {
+        font-size: 13px;
+      }
+      .phone {
+        font-size: 24px;
+        .number {
+          @include bold-font;
+        }
+      }
+      .contact-link {
+        margin-bottom: 10px;
+        a {
+          border-bottom: 0;
+          @include line-dotted;
+        }
+      }
+      .button-link span {
+        @include body-font;
+        @include line-dotted;
+        border-bottom: 0;
+        box-shadow: none;
+      }
+    }
+    .schedule {
+      font-size: 13px;
+      ul {
+        margin-bottom: 20px;
+      }
+      .payment-icon {
+        p {
+          font-size: 13px;
+        }
+        .image {
+          background-image: url(../img/sprite.png);
+          background-position: -2px 41px;
+          width: 225px;
+          height: 30px;
+        }
+      }
+    }
+    .social {
+      position: relative;
+      a {
+        display: flex;
+        align-items: center;
+        border-bottom: 0;
+        margin-bottom: 5px;
+        span {
+          border-bottom: 1px solid #105a8f;
+          color: #105a8f;
+        }
+      }
+      .border {
+        position: absolute;
+        top: -50px;
+        right: 35px;
+        background: #dddcdc;
+        width: 1px;
+        height: 190px;
+        border: 0 !important;
+        &:after {
+          content: "";
+          width: 2rem;
+          right: -1rem;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          -webkit-box-shadow: inset 0 25px 25px 0 #fff;
+          box-shadow: inset 0 25px 25px 0 #fff;
+        }
+        &:before {
+          content: "";
+          width: 2rem;
+          right: -1rem;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          bottom: 0;
+          -webkit-box-shadow: inset 0 -25px 25px 0 #fff;
+          box-shadow: inset 0 -25px 25px 0 #fff;
+        }
+      }
+    }
+    .developer {
+      div {
+        margin-top: 5px;
+        font-size: 11px;
+        a {
+          font-size: 11px;
+        }
+      }
+      img {
+        max-width: 116px;
+        height: 21px;
+      }
+      span {
+        color: #999;
+        font-size: 11px;
+      }
+    }
+}

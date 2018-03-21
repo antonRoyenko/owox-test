@@ -1,0 +1,160 @@
+.shop-header {
+  padding-top: 10px;
+  padding-bottom: 15px;
+  position: relative;
+  &:before {
+    content: '';
+    position: absolute;
+    top: 70px;
+    width: 100%;
+    height: 100px;
+    @include header-gradient;
+  }
+  .contact {
+    .phone {
+      font-style: italic;
+      .city-code {
+        font-size: 22.77px;
+      }
+      .main-number {
+        font-size: 34.15px;
+        @include bold-font;
+      }
+    }
+    .link-call-back {
+      padding-left: 10px;
+      a {
+        border-bottom: 0;
+        @include line-dotted;
+      }
+    }
+  }
+  .input {
+    .input-group {
+      position: relative;
+      height: 25px;
+      background: #ffffff;
+      border: 1px solid #c4c4c4;
+      box-shadow: inset 2px 2px 0px 0px #ebebeb;
+      @include parent-skew;
+      width: 100%;
+    }
+    input {
+      height: 24px;
+      border: 0;
+      background: transparent;
+      @include child-skew;
+      &:focus {
+          box-shadow: none;
+          outline: 0;
+      }
+      &::-webkit-input-placeholder {
+        color: #999;
+        font-size: 15px;
+        @include body-font-italic;
+      }
+      &::-moz-placeholder {
+        color: #999;
+        font-size: 15px;
+        @include body-font-italic;
+      }
+      &:-ms-input-placeholder {
+        color: #999;
+        font-size: 15px;
+        @include body-font-italic;
+      }
+      &:-moz-placeholder {
+        color: #999;
+        font-size: 15px;
+        @include body-font-italic;
+      }
+    }
+    .btn-search {
+      height: 21px;
+      cursor: pointer;
+      @include button-gradient;
+      margin: 1px;
+      padding-left: 20px;
+      padding-right: 20px;
+      border: 1px solid #e4e4e4;
+      border-top-left-radius: 7px;
+      border-top-right-radius: 2px;
+      border-bottom-right-radius: 7px;
+      border-bottom-left-radius: 2px;
+      &:active {
+        outline: none;
+      }
+    }
+  }
+  .helping {
+    text-align: center;
+    display: flex;
+    align-items: flex-end;
+    position: relative;
+    border: 1px solid #6cbe68;
+    border-radius: 5px;
+    width: 85px;
+    height: 85px;
+    @include simple-gradient;
+    a {
+      color: $theme-main;
+      border-bottom: 0;
+      @include bold-font;
+      p {
+        line-height: 1.2;
+        margin-bottom: 5px;
+        font-size: 13px;
+      }
+      .operator {
+        background-image: url('../img/sprite.png');
+        background-position: 1px 0px;
+        position: absolute;
+        top: -10px;
+        right: 0;
+        width: 85px;
+        height: 60px;
+      }
+      .circle {
+        background-image: url('../img/sprite.png');
+        background-position: -4px 58px;
+        position: absolute;
+        top: 3px;
+        right: 2px;
+        width: 10px;
+        height: 10px;
+      }
+    }
+  }
+  .sign-in {
+    text-align: right;
+    a {
+      border-bottom: 0;
+      span {
+        background-image: linear-gradient(to right, #105a8f 50%, rgba(255,255,255,0) 0%);
+        background-position: bottom;
+        background-size: 4px 1px;
+        background-repeat: repeat-x;
+      }
+    }
+  }
+  .cart {
+    display: flex;
+    position: relative;
+    float: right;
+    width: 205px;
+    margin-top: 15px;
+    @include heading-font;
+    font-size: 23px;
+    background: transparent;
+    padding: 7.5px 35px 7.5px 15px;
+    border: 1px solid #cecdcd;
+    border-radius: 7px;
+    &:after {
+      content: url('../img/arrow-down.png');
+      position: absolute;
+      right: 10px;
+      width: 13px;
+      height: 13px;
+    }
+  }
+}
