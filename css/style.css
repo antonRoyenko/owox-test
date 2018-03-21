@@ -1078,6 +1078,8 @@ footer {
     padding: 10px 20px 10px 25px; }
     .nav-bar .primary-nav .subnav a {
       font-size: 13px; }
+  .shares #shares-carousel .carousel-caption {
+    width: 90%; }
   .brands-title ul {
     column-gap: 15px; }
   .shadow:after {
